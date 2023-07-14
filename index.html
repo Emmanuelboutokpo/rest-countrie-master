@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Rest countrie</title>
+</head>
+
+<body>
+  <header>
+    <h2 class="title">Where in the words?</h2>
+    <button class="btn">
+      <div class="title_img"></div>
+      Dark Mode
+    </button>
+  </header>
+  <div class="container">
+    <nav class="search_filter">
+      <div class="search">
+        <i class="bi bi-search"></i>
+        <input type="text" placeholder="Search for a country">
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">Filter by Region
+          <i class="bi bi-chevron-down"></i>
+        </button>
+        <div id="myDropdown" class="dropdown-content">
+          <p id="all">All</p>
+          <p id="Africa">Africa</p>
+          <p id="Americas">America</p>
+          <p id="Asia">Asia</p>
+          <p id="Europe">Europe</p>
+          <p id="Oceania">Oceania</p>
+        </div>
+      </div>
+    </nav>
+    <section class="countries_detail">
+    </section>
+    <div id="pagination-container" class="pagination-container"></div>
+
+    <div class="modalDevisHead" id="myModal">
+         <div class="modalDevisContent"></div>
+    </div>
+  </div>
+  <script src="./app.js"></script>
+</body>
+
+</html>
